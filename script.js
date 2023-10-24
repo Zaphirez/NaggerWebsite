@@ -44,7 +44,9 @@ const quotes = [
     "\"randomly demotes ppl for troll\"",
     "big doink dps",
     "free serbia from evil bulgarian regime",
-    "i like wieners"
+    "i like wieners",
+    "Water?... Boooooring... atleast take some Cocaine with some LSD on the Side while drinking Beers and Alcohol",
+    "chiggn wing"
 ];
 
 const quoteElement = document.getElementById("quote");
