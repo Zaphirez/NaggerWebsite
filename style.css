@@ -10,18 +10,22 @@ body {
     font-size: 100px;
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
     height: 100vh;
     margin: 0;
-
+    
 }
 
 .quote-container {
     text-align: center;
     padding: 100px;
     margin-top:10px;
+    align-self: center;
 }
 
 button {
+    align-self: center;
     background-color: #000;
     color: #ffff;
     padding: 10px 20px;
@@ -35,5 +39,13 @@ button {
 
 .author {
     font-size: 60px;
+    font-style: italic;
     color: #fff;
+}
+
+.credit {
+    text-align: left;
+    font-family: Roboto;
+    margin-left: 10px;
+    font-size: 14px;
 }

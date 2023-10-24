@@ -52,7 +52,18 @@ const quotes = [
 const quoteElement = document.getElementById("quote");
 const generateButton = document.getElementById("generate-button");
 
+const displayedQuotes = [];
+
 generateButton.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    quoteElement.textContent = `"${quotes[randomIndex]}"`;
-})
+    let randomIndex;
+    let randomQuote;
+
+    do {
+        randomIndex = Math.floor(Math.random() * quotes.length);
+        randomQuote = quotes[randomIndex];
+    } while (displayedQuotes.includes(randomQuote));
+    if (displayedQuotes.length > 10) {
+        displayedQuotes.shift();
+    }
+    quoteElement.textContent = `"${randomQuote}"`;
+});
