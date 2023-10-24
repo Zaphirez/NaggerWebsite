@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Comic";
+    src: url("Wigglye.ttf") format('truetype');
+}
+
+body {
+    background-color: #000;
+    color: #ffff;
+    font-family: Comic; 
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.quote-container {
+    text-align: center;
+    padding: 100px;
+    margin-top:10px;
+}
+
+button {
+    background-color: #000;
+    color: #ffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.author {
+    font-size: 60px;
+    color: #fff;
+}
