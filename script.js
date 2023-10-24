@@ -62,7 +62,7 @@ generateButton.addEventListener("click", () => {
         randomIndex = Math.floor(Math.random() * quotes.length);
         randomQuote = quotes[randomIndex];
     } while (displayedQuotes.includes(randomQuote));
-    if (displayedQuotes.length > 10) {
+    if (displayedQuotes.length > Math.floor(quotes.length/2)) {
         displayedQuotes.shift();
     }
     displayedQuotes.push(randomQuote)
