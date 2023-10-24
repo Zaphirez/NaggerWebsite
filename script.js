@@ -65,5 +65,6 @@ generateButton.addEventListener("click", () => {
     if (displayedQuotes.length > 10) {
         displayedQuotes.shift();
     }
+    displayedQuotes.push(randomQuote)
     quoteElement.textContent = `"${randomQuote}"`;
 });
