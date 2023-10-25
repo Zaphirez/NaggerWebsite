@@ -49,3 +49,12 @@ button {
     margin-left: 10px;
     font-size: 14px;
 }
+
+.github {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    font-family: Roboto;
+    font-size: 14px;
+
+}

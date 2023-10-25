@@ -7,7 +7,7 @@ const quotes = [
     "Amazing Grace - Kazoo Cover",
     "Baddadan",
     "Baddadan Baddadan Baddadan",
-    "https://open.spotify.com/track/\n2ZWmmrWUgDBcPSLihBMvhg?si=fd723c3e41b14176",
+    "https://open.spotify.com/track/2ZWmmrWUgDBcPSLihBMvhg?si=fd723c3e41b14176",
     "Durum Kebab",
     "Retail is Ass!",
     "FUCK",
@@ -46,7 +46,14 @@ const quotes = [
     "free serbia from evil bulgarian regime",
     "i like wieners",
     "Water?... Boooooring... atleast take some Cocaine with some LSD on the Side while drinking Beers and Alcohol",
-    "chiggn wing"
+    "chiggn wing",
+    "Ok so once i got 20k Dps on this boss",
+    "Recount Bugged",
+    "Oh no! I'm getting out DPS'd",
+    "I am so hungover",
+    "Stockades is THE single best Dungeon ever created",
+    ":3",
+    "teehee"
 ];
 
 const quoteElement = document.getElementById("quote");
