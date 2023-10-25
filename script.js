@@ -50,10 +50,13 @@ const quotes = [
     "Ok so once i got 20k Dps on this boss",
     "Recount Bugged",
     "Oh no! I'm getting out DPS'd",
-    "I am so hungover",
-    "Stockades is THE single best Dungeon ever created",
+    "I am so hungover",,
     ":3",
-    "teehee"
+    "teehee",
+    "I ruw you\n(Dog Language \"ruw\" = love ig)",
+    "I like my Guild",
+    "You Guys are awesome",
+    "Maraudon is THE Single best Classic Dungeon"
 ];
 
 const quoteElement = document.getElementById("quote");
