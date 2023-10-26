@@ -45,9 +45,10 @@ button {
 }
 
 .credit {
-    text-align: left;
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
     font-family: Roboto;
-    margin-left: 10px;
     font-size: 14px;
 }
 
