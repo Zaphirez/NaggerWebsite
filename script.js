@@ -4,7 +4,7 @@ const quotes = [
     "Fucking Manaproblem!",
     "Mapo",
     "Tumtum",
-    "Amazing Grace - Kazoo Cover",
+    "<em>Amazing Grace - Kazoo Cover</em>",
     "Baddadan",
     "Baddadan Baddadan Baddadan",
     "https://open.spotify.com/track/\n2ZWmmrWUgDBcPSLihBMvhg?si=fd723c3e41b14176",
@@ -26,14 +26,14 @@ const quotes = [
     "fcking nubs",
     "nob",
     "nub",
-    "\"Random Spotify Song Link\"",
+    "<em>Random Spotify Song Link</em>",
     "NIGGERS",
     "You Motherfucker",
     "assa noob rogue",
     "I\'m not racist",
     "twat",
     "fUK",
-    "\"Posts offensive GIF\"",
+    "<em>Posts offensive GIF</em>",
     "thick milk",
     "hello nob players",
     "u gey",
@@ -41,7 +41,7 @@ const quotes = [
     "I\'m not drunk",
     "Whenever we wipe ppl should be FUCKING MANAPROBLEM \n and i like that",
     "gkick",
-    "\"randomly demotes ppl for troll\"",
+    "randomly demotes ppl for troll",
     "big doink dps",
     "free serbia from evil bulgarian regime",
     "i like wieners",
@@ -56,7 +56,9 @@ const quotes = [
     "I ruw you\n(Dog Language \"ruw\" = love ig)",
     "I like my Guild",
     "You Guys are awesome",
-    "Maraudon is THE Single best Classic Dungeon"
+    "Maraudon is THE Single best Classic Dungeon",
+    "<em>Random Danish</em>",
+    "<em>Random German Gibberish nonsense</em>"
 ];
 
 const quoteElement = document.getElementById("quote");
@@ -70,11 +72,11 @@ generateButton.addEventListener("click", () => {
 
     do {
         randomIndex = Math.floor(Math.random() * quotes.length);
-        randomQuote = quotes[randomIndex];
+        randomQuote = quotes[randomIndex].replace(/\n/g, "<br>");
     } while (displayedQuotes.includes(randomQuote));
     if (displayedQuotes.length > Math.floor(quotes.length/2)) {
         displayedQuotes.shift();
     }
     displayedQuotes.push(randomQuote)
-    quoteElement.textContent = `"${randomQuote}"`;
+    quoteElement.innerHTML = `"${randomQuote}"`;
 });
