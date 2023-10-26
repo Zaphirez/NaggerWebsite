@@ -33,7 +33,7 @@ const quotes = [
     "I\'m not racist",
     "twat",
     "fUK",
-    "<em>Posts offensive GIF</em>",
+    "<em>Posts offensive GIF</em> ",
     "thick milk",
     "hello nob players",
     "u gey",
@@ -77,6 +77,12 @@ generateButton.addEventListener("click", () => {
     if (displayedQuotes.length > Math.floor(quotes.length/2)) {
         displayedQuotes.shift();
     }
+
+    const italicClass = "italic";
+
+    let formattedQuote = randomQuote.replace(/<em>/g, `<span class="${italicClass}">`).replace(/<\/em>/g, `</span>`)
+
+
     displayedQuotes.push(randomQuote)
-    quoteElement.innerHTML = `"${randomQuote}"`;
+    quoteElement.innerHTML = `"${formattedQuote}"`;
 });
