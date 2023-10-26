@@ -50,7 +50,7 @@ const quotes = [
     "Ok so once i got 20k Dps on this boss",
     "Recount Bugged",
     "Oh no! I'm getting out DPS'd",
-    "I am so hungover",,
+    "I am so hungover",
     ":3",
     "teehee",
     "I ruw you\n(Dog Language \"ruw\" = love ig)",
