@@ -58,7 +58,8 @@ const quotes = [
     "You Guys are awesome",
     "Maraudon is THE Single best Classic Dungeon",
     "<em>Random Danish</em>",
-    "<em>Random German Gibberish nonsense</em>"
+    "<em>Random German Gibberish nonsense</em>",
+    "Back when i was on cocaine..."
 ];
 
 const quoteElement = document.getElementById("quote");

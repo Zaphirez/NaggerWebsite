@@ -4,17 +4,16 @@
 }
 
 body {
-    background-color: #000;
+    background-color: #0A0A0A;
     color: #ffff;
-    font-family: Comic; 
+    font-family: Comic;
     font-size: 100px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: flex-start;
     height: 100vh;
     margin: 0;
-    
 }
 
 .quote-container {
@@ -26,7 +25,7 @@ body {
 
 button {
     align-self: center;
-    background-color: #000;
+    background-color: #0A0A0A;
     color: #ffff;
     padding: 10px 20px;
     border: solid;
