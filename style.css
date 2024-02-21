@@ -25,16 +25,32 @@ body {
 
 button {
     align-self: center;
-    background-color: #0A0A0A;
+    background-color: #141414;
     color: #ffff;
     padding: 10px 20px;
     border: solid;
-    border-radius: 10px;
+    border-radius: 50px;
+    border-width: 0.05rem;
+    border-color: black;
     cursor: pointer;
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 5px #292929;
+}
+
+button:hover {
+    background-color: black;
+    transition: 0.2s;
+}
+
+button:active {
+    background-color: #68081f;
+    border-color: #5F071C;
+    transition: 0.1s;
+    box-shadow: 2px 2px 10px 5px #3D3D3D;
 }
 
 .author {
@@ -57,5 +73,9 @@ button {
     bottom: 0px;
     font-family: Roboto;
     font-size: 14px;
+}
 
+.Baddadan {
+    font-size: 20px;
+    font-family: Roboto;
 }

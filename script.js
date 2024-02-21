@@ -7,7 +7,7 @@ const quotes = [
     "<em>Amazing Grace - Kazoo Cover</em>",
     "Baddadan",
     "Baddadan Baddadan Baddadan",
-    "https://open.spotify.com/track/\n2ZWmmrWUgDBcPSLihBMvhg?si=fd723c3e41b14176",
+    "spotify:track:2ZWmmrWUgDBcPSLihBMvhg?si=fd723c3e41b14176",
     "Durum Kebab",
     "Retail is Ass!",
     "FUCK",
@@ -27,8 +27,8 @@ const quotes = [
     "nob",
     "nub",
     "<em>Random Spotify Song Link</em>",
-    "NIGGERS",
-    "You Motherfucker",
+    "N*GGERS",
+    "You Motherf*****",
     "assa noob rogue",
     "I\'m not racist",
     "twat",
@@ -39,7 +39,7 @@ const quotes = [
     "u gey",
     "I\'m out of Beers",
     "I\'m not drunk",
-    "Whenever we wipe ppl should be FUCKING MANAPROBLEM \n and i like that",
+    "Whenever we wipe ppl should be FU**ING MANAPROBLEM \n and i like that",
     "gkick",
     "randomly demotes ppl for troll",
     "big doink dps",
@@ -71,19 +71,38 @@ generateButton.addEventListener("click", () => {
     let randomIndex;
     let randomQuote;
 
+    /* Generates Random Quote */
     do {
         randomIndex = Math.floor(Math.random() * quotes.length);
         randomQuote = quotes[randomIndex].replace(/\n/g, "<br>");
     } while (displayedQuotes.includes(randomQuote));
+
+    /* Adds Generated Quote to already displayed Quotes */
+    displayedQuotes.push(randomQuote)
+
+    /* Makes sure User doesnt run out of quotes */
     if (displayedQuotes.length > Math.floor(quotes.length/2)) {
         displayedQuotes.shift();
     }
 
-    const italicClass = "italic";
-
-    let formattedQuote = randomQuote.replace(/<em>/g, `<span class="${italicClass}">`).replace(/<\/em>/g, `</span>`)
-
-
-    displayedQuotes.push(randomQuote)
-    quoteElement.innerHTML = `"${formattedQuote}"`;
+    /* Checks for Spotify Tracks */
+    if (randomQuote.includes("spotify:track:")) {
+        let spotifytrackid = randomQuote.split(":")[2];
+        /* Displays Track on Frontend */
+        quoteElement.innerHTML = `<p class="Baddadan">Baddadan Link if no Spotify Embed shown please report!</p>\n<iframe src="https://open.spotify.com/embed/track/${spotifytrackid}" width="600" height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+    } else {
+        /* Formats the Quote */
+        let formattedQuote = randomQuote.replace(/<em>/g, `<span class="italic">`).replace(/<\/em>/g, `</span>`)
+        /* Displays Quote on Frontend */
+        quoteElement.innerHTML = `"${formattedQuote}"`;
+    }
 });
+
+
+/* Toggles visibility of the ~Nagger */
+function toggle() {
+    var x = document.getElementById("toggle");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    }
+}
