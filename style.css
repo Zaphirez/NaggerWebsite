@@ -80,6 +80,11 @@ button:active {
     font-family: Roboto;
 }
 
+.warning {
+    font-size: 10px; 
+    font-family: Roboto;
+}
+
 /* 404 Webpage */
 .notfounddiv {
     position: absolute;

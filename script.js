@@ -89,7 +89,7 @@ generateButton.addEventListener("click", () => {
     if (randomQuote.includes("spotify:track:")) {
         let spotifytrackid = randomQuote.split(":")[2];
         /* Displays Track on Frontend */
-        quoteElement.innerHTML = `<p class="Baddadan">Baddadan Link if no Spotify Embed shown please report!</p>\n<iframe src="https://open.spotify.com/embed/track/${spotifytrackid}" width="600" height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+        quoteElement.innerHTML = `<p class="Baddadan">Baddadan Link if no Spotify Embed shown please report!</p>\n<p class="warning">VOLUME WARNING TURN DOWN THE VOLUME OF YOUR HEADSET I CANT CONTROLL THIS!!!!</p>\n<iframe src="https://open.spotify.com/embed/track/${spotifytrackid}" width="600" height="160" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
     } else {
         /* Formats the Quote */
         let formattedQuote = randomQuote.replace(/<em>/g, `<span class="italic">`).replace(/<\/em>/g, `</span>`)
